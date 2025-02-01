@@ -1,6 +1,5 @@
 package com.sorting;
 
-import static com.sun.xml.internal.ws.util.VersionUtil.compare;
 
 public class Employee implements Comparable<Employee>{
     private int id;
