@@ -56,6 +56,7 @@ public class MergeSort {
         List<Integer> myList = new ArrayList<>(Arrays.asList(54, 26, 93, 17, 77, 31, 44, 55, 20));
         System.out.println("Original:       " + myList);
         List<Integer> sortedList = mergeSort(myList);
+        
         System.out.println("After mergeSort: " + sortedList);
 
         System.out.println("Original sorted? " + verifySorted(myList));
