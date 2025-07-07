@@ -1,6 +1,6 @@
 package com.j8;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class ForEachOrder {
     public static void main(String[] args) {
