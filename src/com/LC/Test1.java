@@ -2,7 +2,7 @@ package com.LC;
 
 
 class Test1 {
-    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         if (nums1.length > nums2.length) {
             return findMedianSortedArrays(nums2, nums1);
         }
@@ -27,7 +27,7 @@ class Test1 {
                     return (Math.max(maxLeftA, maxLeftB)+Math.min(minRightA, minRightB))/2.0;
                 }
                 else{
-                    Math.max(maxLeftA, maxLeftB);
+                   return Math.max(maxLeftA, maxLeftB);
                 }
             } else if (maxLeftA > minRightB) {
                 high =i-1;
@@ -37,5 +37,16 @@ class Test1 {
             }
         }
         throw new IllegalArgumentException("Input Arrays are not sorted");
+    }
+
+    public static void main(String[] args) {
+        int[] nums1={1,3};
+        int[] nums2={2};
+        double median = findMedianSortedArrays(nums1, nums2);
+        System.out.println("Median is : "+median);
+
+        int [] num3={1,2};
+        int [] num4={3,4};
+        System.out.println("Median is :: "+findMedianSortedArrays(num3, num4));
     }
 }
