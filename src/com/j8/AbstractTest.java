@@ -5,22 +5,18 @@ abstract class AbstractClass {
         System.out.println("Abstract class Constructor");
     }
 
+    static int multiply(int a, int b) {
+        return a * b;
+    }
+
     abstract int add(int a, int b);
 
     int sub(int a, int b) {
         return a + b;
     }
-
-    static int multiply(int a, int b) {
-        return a * b;
-    }
 }
 
 public class AbstractTest extends AbstractClass {
-    public int add(int a, int b) {
-        return a + b;
-    }
-
     public static void main(String[] args) {
         AbstractTest abstractTest = new AbstractTest();
         int add = abstractTest.add(20, 10);
@@ -31,5 +27,9 @@ public class AbstractTest extends AbstractClass {
         System.out.println(sub);
         System.out.println(result);
 
+    }
+
+    public int add(int a, int b) {
+        return a + b;
     }
 }

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-class Employee{
+class Employee {
     private String name;
     private double salary;
 
@@ -43,6 +43,6 @@ public class FindMaxSal {
 
         employees.add(new Employee("Ozair", 22000));
         List<String> highEarnerNames = employees.stream().filter(emp -> emp.getSalary() > 20000).map(Employee::getName).collect(Collectors.toList());
-        System.out.println("employees earning 20000 : "+highEarnerNames);
+        System.out.println("employees earning 20000 : " + highEarnerNames);
     }
 }

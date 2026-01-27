@@ -11,14 +11,13 @@ public class FrequencyOfEachChar {
         String inputString = "Java Concept Of The Day";
 
         Map<Character, Long> characterCountMap = inputString.chars().mapToObj(c -> (char) c).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-        System.out.println("Frequency of char is : "+characterCountMap);
+        System.out.println("Frequency of char is : " + characterCountMap);
 
         System.out.println("Frequency of each element of a list");
 
         List<String> stationaryList = Arrays.asList("Pen", "Eraser", "Note Book", "Pen", "Pencil", "Stapler", "Note Book", "Pencil");
         Map<String, Long> stationaryCountMap = stationaryList.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
         System.out.println(stationaryCountMap);
-        
 
 
     }

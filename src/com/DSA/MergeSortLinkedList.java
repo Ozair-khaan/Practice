@@ -1,8 +1,5 @@
 package com.DSA;
 
-import java.util.Arrays;
-import java.util.List;
-
 class ListNode {
     int val;
     ListNode next;

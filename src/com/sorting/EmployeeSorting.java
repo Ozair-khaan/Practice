@@ -4,9 +4,14 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-class Employees{
+class Employees {
     String name;
     String department;
+
+    public Employees(String name, String department) {
+        this.name = name;
+        this.department = department;
+    }
 
     // Getter methods
     public String getName() {
@@ -15,11 +20,6 @@ class Employees{
 
     public String getDepartment() {
         return department;
-    }
-
-    public Employees(String name, String department) {
-        this.name = name;
-        this.department = department;
     }
 
     @Override

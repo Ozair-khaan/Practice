@@ -1,13 +1,13 @@
 package com.test;
 
 class Animal {
-    void m1(){
+    void m1() {
         System.out.println("The animal make sound");
     }
 }
 
-class Dog extends Animal{
-    void m1(){
+class Dog extends Animal {
+    void m1() {
         System.out.println("the dog is barking");
     }
 }

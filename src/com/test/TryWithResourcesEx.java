@@ -8,16 +8,15 @@ public class TryWithResourcesEx {
 
     public static void main(String[] args) {
 
-        try{
-            FileOutputStream fileOutputStream= new FileOutputStream("/");
+        try {
+            FileOutputStream fileOutputStream = new FileOutputStream("/");
             InputStream stream = new FileInputStream("/java");
 
-            String msg= "hello World";
+            String msg = "hello World";
             byte[] bytes = msg.getBytes();
             fileOutputStream.write(bytes);
 
-        }
-        catch (Exception e){
+        } catch (Exception e) {
 
         }
 

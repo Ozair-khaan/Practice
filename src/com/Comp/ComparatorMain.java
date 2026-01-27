@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-class Movies{
+class Movies {
     private String name;
     private double rating;
     private int yaer;
@@ -28,7 +28,7 @@ class Movies{
     }
 }
 
-class Rating implements Comparator<Movies>{
+class Rating implements Comparator<Movies> {
 
     @Override
     public int compare(Movies m1, Movies m2) {
@@ -36,8 +36,8 @@ class Rating implements Comparator<Movies>{
     }
 }
 
-class NameCompare implements Comparator<Movies>{
-    public int compare(Movies m1, Movies m2){
+class NameCompare implements Comparator<Movies> {
+    public int compare(Movies m1, Movies m2) {
         return m1.getName().compareTo(m2.getName());
     }
 }

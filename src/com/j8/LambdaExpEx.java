@@ -1,10 +1,6 @@
 package com.j8;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-
-interface Sayable{
+interface Sayable {
     public String say(String message);
 }
 
@@ -26,15 +22,15 @@ public class LambdaExpEx {
 //        System.out.println(s.say("time is precious."));
 //
         //thread
-        Runnable runnable = new Runnable(){
-            public void run(){
+        Runnable runnable = new Runnable() {
+            public void run() {
                 System.out.println("Thread1 is running...");
             }
         };
         Thread thread = new Thread(runnable);
         thread.start();
 
-        Runnable run=()->{
+        Runnable run = () -> {
             System.out.println("Thread2 is running...");
 
         };

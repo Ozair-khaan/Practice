@@ -12,6 +12,6 @@ public class Main {
         s1.showMessage();
         s2.showMessage();
 
-        System.out.println("Same instance :: "+(s1==s2));
+        System.out.println("Same instance :: " + (s1 == s2));
     }
 }

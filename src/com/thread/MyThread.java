@@ -1,7 +1,7 @@
 package com.thread;
 
-class ThreadEx extends Thread{
-    public  void m1(){
+class ThreadEx extends Thread {
+    public void m1() {
         System.out.println("Hello, I am m1()");
     }
 }

@@ -39,38 +39,38 @@ public class SortingEx {
 
         //using map for iteration
         List<Float> collect = products.stream().filter(p -> p.price > 30000).map(p -> p.price).collect(Collectors.toList());
-        System.out.println("Using map : "+collect);
+        System.out.println("Using map : " + collect);
 
         //using forEach
-        products.stream().filter(prod->prod.price==30000).forEach(product -> System.out.println("Using forEach : "+product.name));
+        products.stream().filter(prod -> prod.price == 30000).forEach(product -> System.out.println("Using forEach : " + product.name));
 
         //using reduce
         Float reduce = products.stream().map(prod -> prod.price).reduce(0.0f, Float::sum);//reduce is using to get the sum of price
-        System.out.println("Using reduce : "+reduce);
+        System.out.println("Using reduce : " + reduce);
 
         //Sum by Using Collectors Methods
         Double collect1 = products.stream().collect(Collectors.summingDouble(product -> product.price));
-        System.out.println("Sum by Using Collectors Methods : "+collect1);
+        System.out.println("Sum by Using Collectors Methods : " + collect1);
 
         //Max Product Price
         Product productA = products.stream().max((products1, products2) -> products1.price > products2.price ? 1 : -1).get();
-        System.out.println("Max product price : "+productA.price);
+        System.out.println("Max product price : " + productA.price);
 
         //Min Product price
         Product productB = products.stream().min((products1, products2) -> products1.price > products2.price ? 1 : -1).get();
-        System.out.println("Max product price : "+productB.price);
+        System.out.println("Max product price : " + productB.price);
 
         //using count
         long count = products.stream().filter(product -> product.price < 30000).count();
-        System.out.println("Count on the basis of given condition : "+count);
+        System.out.println("Count on the basis of given condition : " + count);
 
         //converting list into set
         Set<Float> listIntoSet = products.stream().filter(product -> product.price > 30000).map(product -> product.price).collect(Collectors.toSet());
-        System.out.println("Converted list into set "+listIntoSet);
+        System.out.println("Converted list into set " + listIntoSet);
 
         //converting list into map
         Map<Integer, String> listToMap = products.stream().collect(Collectors.toMap(p -> p.id, p -> p.name));
-        System.out.println("Converted list into map "+listToMap);
+        System.out.println("Converted list into map " + listToMap);
 
     }
 }

@@ -13,7 +13,7 @@ public class ForEachOrder {
         list.add("Himachal");
         list.add("Jaipur");
 
-        list.stream().forEachOrdered(places-> System.out.println(places));
+        list.stream().forEachOrdered(places -> System.out.println(places));
         list.stream().forEachOrdered(System.out::println);
 
     }

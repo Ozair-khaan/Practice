@@ -16,7 +16,7 @@ public class FDup {
 
         duplicateMap.entrySet()
                 .stream().
-                filter(entry->entry.getValue()>1).
-                forEach(entry-> System.out.println(entry.getKey()));
+                filter(entry -> entry.getValue() > 1).
+                forEach(entry -> System.out.println(entry.getKey()));
     }
 }

@@ -1,14 +1,11 @@
 package com.j8;
 
-import java.util.function.Function;
-
-interface Messageable{
+interface Messageable {
     Message getMessage(String msg);
 }
 
-class Message{
-    Message(String msg)
-    {
+class Message {
+    Message(String msg) {
         System.out.println(msg);
     }
 }

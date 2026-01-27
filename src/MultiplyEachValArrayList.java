@@ -12,14 +12,14 @@ public class MultiplyEachValArrayList {
         list.add(50);
 
         List<Integer> collect = list.stream().map(val -> val * 5).collect(Collectors.toList());
-        System.out.println("Using map : "+collect);
+        System.out.println("Using map : " + collect);
 
-        list.forEach(l-> System.out.println("Using forEach: "+l*5));
+        list.forEach(l -> System.out.println("Using forEach: " + l * 5));
 
         //even no.
 
         List<Integer> even = list.stream().filter(val -> val % 2 == 0).collect(Collectors.toList());
-        System.out.println("Even : "+even);
+        System.out.println("Even : " + even);
 
     }
 

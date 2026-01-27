@@ -5,7 +5,7 @@ import java.util.StringJoiner;
 public class StringJoinerEx {
     public static void main(String[] args) {
         //StringJoiner joiner = new StringJoiner(",");
-        StringJoiner joiner = new StringJoiner(",","[", "]");//delimiter , prefix, suffix
+        StringJoiner joiner = new StringJoiner(",", "[", "]");//delimiter , prefix, suffix
         joiner.add("Delhi");
         joiner.add("Mumbai");
         joiner.add("Lucknow");

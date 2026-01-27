@@ -11,18 +11,18 @@ public class MapIterate {
         map.put("Spring", 200);
 
 //        using forEach
-        map.forEach((key, value)->{
-            System.out.println("Key : "+key+" , Value : "+value);
+        map.forEach((key, value) -> {
+            System.out.println("Key : " + key + " , Value : " + value);
         });
 
         //using entrySet
-        for(Map.Entry<String, Integer> entry: map.entrySet()){
-            System.out.println("Key : "+entry.getKey()+" , Value : "+entry.getValue());
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            System.out.println("Key : " + entry.getKey() + " , Value : " + entry.getValue());
         }
 
         //using keySet()
-        for(String key: map.keySet()){
-            System.out.println("Key : "+key);
+        for (String key : map.keySet()) {
+            System.out.println("Key : " + key);
         }
 
         //for safe removal
@@ -32,7 +32,7 @@ public class MapIterate {
             Map.Entry<String, Integer> entry = iterator.next();
 
             if (entry.getValue() == 100) {
-                System.out.println(entry.getValue() +" is successfully removed.");
+                System.out.println(entry.getValue() + " is successfully removed.");
                 iterator.remove(); // Safe removal
             }
         }

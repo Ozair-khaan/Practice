@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class FirstNonRepeated {
     public static void main(String[] args) {
-        String input= "Swiss";
+        String input = "Swiss";
         Optional<Character> result = input.chars().mapToObj(c -> (char) c)
                 .collect(Collectors.groupingBy(Function.identity(),
                         LinkedHashMap::new,
@@ -20,10 +20,9 @@ public class FirstNonRepeated {
                 .map(Map.Entry::getKey)
                 .findFirst();
 
-        if(result.isPresent()){
-            System.out.println("First non-repeated character :: "+result.get());
-        }
-        else {
+        if (result.isPresent()) {
+            System.out.println("First non-repeated character :: " + result.get());
+        } else {
             System.out.println("No non-repeated character found");
         }
     }

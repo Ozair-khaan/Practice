@@ -1,7 +1,5 @@
 package com.j8;
 
-import java.util.stream.IntStream;
-
 public class PalindromeCheck {
     public static void main(String[] args) {
         String str = "madam";

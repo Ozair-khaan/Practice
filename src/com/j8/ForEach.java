@@ -13,7 +13,7 @@ public class ForEach {
         list.add("Baseball");
         list.add("Badminton");
 
-        list.forEach(game-> System.out.println(game));
+        list.forEach(game -> System.out.println(game));
         //Another way to iterate...
         list.forEach(System.out::println);
         //sorting

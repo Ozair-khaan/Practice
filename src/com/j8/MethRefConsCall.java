@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class MethRefConsCall {
-    public  MethRefConsCall(){
+    public MethRefConsCall() {
         System.out.println("Constructor is being called");
     }
 
